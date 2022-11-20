@@ -1,0 +1,266 @@
+@font-face {
+    /*подключение шрифтов на страницу*/
+    font-family: "Comfortaa-Regular";
+    src: url("../fonts/Comfortaa-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "mak-3";
+    src: url("../fonts/mak-3.ttf");
+    font-weight: normal;
+}
+
+* {
+    /*все элементы*/
+    padding: 0;
+    /*чтобы убрать все стандартные отсупы, которые есть на страницк*/
+    margin: 0;
+}
+
+body {
+    font-family: "Comfortaa-Regular", sans-serif;
+    font-weight: normal;
+    color: #000000;
+}
+
+/*---------------------------- header -----------------------------*/
+
+header {
+    width: 100%;
+    /* Блок растянется на всю ширину экрана*/
+    background-color: #FFFFFF;
+    position: fixed;
+    z-index: 1000;
+
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+}
+
+
+.logo img {
+    width: 161px;
+    height: 44.73px;
+    margin: 0;
+}
+
+.menu {
+    width: 483px;
+    margin-left: 178px;
+}
+
+.menu ul {
+    list-style: none;
+    /*чтобы убрать кружки у маркированного списка*/
+    display: flex;
+    /*чтобы пункты меню встали в одну строку*/
+}
+
+.menu-item {
+    margin-right: 40px;
+    /*отступы между элементами меню*/
+}
+
+.menu-item a {
+    text-decoration: none;
+    /*убираем подчёркивание ссылок*/
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000;
+}
+
+.menu-tel {
+    width: 163px;
+    margin-left: 175px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+/*---------------------------- main -----------------------------*/
+
+main {
+    width: 1160px;
+    margin: 0 auto;
+    padding: 130px 0px;
+    display: block;
+}
+
+iframe {
+    width: 1160px;
+    margin-bottom: 20px;
+}
+
+.contacts {
+    float: left;
+    width: 25%;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-family: 'mak-3';
+    font-style: normal;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.3em;
+    color: #000000;
+}
+
+.contacts_block {
+    text-align: justify;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #F6F6F6;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+
+span {
+    color: #5f656d;
+}
+
+.forms {
+    float: left;
+    padding-left: 5%;
+    width: 70%;
+}
+
+form {
+    margin: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.form {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.form p {
+    margin-bottom: 5px;
+}
+
+input {
+    width: 85%;
+    height: 40px;
+    background-color: #F6F6F6;
+    padding: 0% 5%;
+    border: #000;
+}
+
+select {
+    width: 95%;
+    height: 44px;
+    background-color: #F6F6F6;
+    padding: 0% 5%;
+}
+
+button {
+    display: block;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 385px;
+    height: 67px;
+    background: #31D6C9;
+    border: 0;
+    /*убираю стандартную рамку*/
+    box-sizing: border-box;
+    /*чтобы наши отступы входили в наши размеры*/
+}
+
+button p {
+    font-size: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    /*чтобы стрелка менялась на руку при наведении*/
+}
+
+/*---------------------------- footer -----------------------------*/
+
+footer {
+    margin-top: 50px;
+    display: inline-block;
+    width: 100%;
+    background-color: #000000;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.container_footer {
+    height: 579px;
+    max-width: 1160px;
+    margin: auto;
+    padding-top: 65px;
+}
+
+.footer_logo {
+    width: 200px;
+    height: 55.57px;
+    margin-bottom: 20.43px;
+}
+
+.footer_text {
+    margin-bottom: 113px;
+    font-family: "Comfortaa-Regular";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+    display: flex;
+    width: 1160px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.text_column {
+    width: 360px;
+}
+
+.text_images img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    margin-top: 58px;
+    transition: 0.5s;
+    /* Время эффекта */
+}
+
+.text_images img:hover {
+    transform: scale(1.2);
+    /* Увеличиваем масштаб */
+    cursor: pointer;
+    /*чтобы стрелка менялась на руку при наведении*/
+}
+
+.footer_text_bottom {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13px;
+    color: #FFFFFF;
+}

@@ -1,0 +1,252 @@
+@font-face {
+    /*подключение шрифтов на страницу*/
+    font-family: "Comfortaa-Regular";
+    src: url("../fonts/Comfortaa-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "mak-3";
+    src: url("../fonts/mak-3.ttf");
+    font-weight: normal;
+}
+
+* {
+    /*все элементы*/
+    padding: 0;
+    /*чтобы убрать все стандартные отсупы, которые есть на страницк*/
+    margin: 0;
+}
+
+body {
+    font-family: "Comfortaa-Regular", sans-serif;
+    font-weight: normal;
+    color: #000000;
+}
+
+/*---------------------------- header -----------------------------*/
+
+header {
+    width: 100%;
+    /* Блок растянется на всю ширину экрана*/
+    background-color: #FFFFFF;
+    position: fixed;
+    z-index: 1000;
+
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+}
+
+
+.logo img {
+    width: 161px;
+    height: 44.73px;
+    margin: 0;
+}
+
+.menu {
+    width: 483px;
+    margin-left: 178px;
+}
+
+.menu ul {
+    list-style: none;
+    /*чтобы убрать кружки у маркированного списка*/
+    display: flex;
+    /*чтобы пункты меню встали в одну строку*/
+}
+
+.menu-item {
+    margin-right: 40px;
+    /*отступы между элементами меню*/
+}
+
+.menu-item a {
+    text-decoration: none;
+    /*убираем подчёркивание ссылок*/
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000;
+}
+
+.menu-tel {
+    width: 163px;
+    margin-left: 175px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+/*---------------------------- map -----------------------------*/
+
+.map {
+    max-width: 1160px;
+    margin: 0 auto;
+    position: relative;
+    padding: 150px 0px 0px;
+}
+
+.center_box {
+    max-width: 1160px;
+}
+
+.map_of_Russia {
+    margin: auto;
+    width: 1000px;
+    height: 687px;
+    overflow: hidden;    /* Скрываем всё за контуром */
+}
+
+img {
+    object-fit: cover;
+    width: 1000px;
+    height: 687px;
+}
+
+.list_of_cities {
+    height: 150px;
+    max-width: 1160px;
+    padding: 50px 10px 50px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: space-between;
+    justify-content: flex-start;
+}
+
+.list_of_cities li {
+    margin-bottom: 10px;
+    width: 160px;
+}
+
+/*---------------------------- map -----------------------------*/
+
+.about_us {
+    background-color: #31D6C9;
+    background-size: cover; 
+    background-position: center center;
+    padding: 50px 0px;
+}
+
+.about_us .center_box {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.about_us_text {
+    padding: 0 10px;
+    width: 700px;
+}
+
+.about_us_text h2 {
+    font-family: "mak-3";
+    font-weight: 300;
+    font-size: 30px;
+    color: #000000;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.about_us_text h3 {
+    font-family: "mak-3";
+    color: #000000;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+
+.about_us_text p {
+    color: #000000;
+    font-weight: 300;
+    font-size: 20px;
+    font-family: "Comfortaa-Regular";
+    font-style: normal;
+    text-align: justify;
+}
+
+.abous_us_img {
+    width: 434px;
+    height: 434px;
+    background-size: cover;
+}
+
+/*---------------------------- footer -----------------------------*/
+
+footer {
+    width: 100%;
+    background-color: #000000;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.container_footer {
+    height: 579px;
+    max-width: 1160px;
+    margin: auto;
+    padding-top: 65px;
+}
+
+.footer_logo {
+    width: 200px;
+    height: 55.57px;
+    margin-bottom: 20.43px;
+}
+
+.footer_text {
+    margin-bottom: 113px;
+    font-family: "Comfortaa-Regular";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+    display: flex;
+    width: 1160px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.text_column {
+    width: 360px;
+}
+
+.text_images img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    margin-top: 58px;
+    transition: 0.5s;
+    /* Время эффекта */
+}
+
+.text_images img:hover {
+    transform: scale(1.2);
+    /* Увеличиваем масштаб */
+    cursor: pointer;
+    /*чтобы стрелка менялась на руку при наведении*/
+}
+
+.footer_text_bottom {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13px;
+    color: #FFFFFF;
+}
